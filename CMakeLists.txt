@@ -7,5 +7,8 @@ file(
     sources_files
     src/*
 )
+add_subdirectory(lib)
 add_executable(helloworld ${sources_files})
+add_dependencies(helloworld world)
+target_link_libraries(helloworld world)
 target_include_directories(helloworld PUBLIC inc)

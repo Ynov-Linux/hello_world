@@ -11,6 +11,6 @@ int main(int argc, char **argv)
 
   set_world("Hello World");
 
-  printf("%s from library", get_world());
+  printf("%s from library\n", get_world());
   return 0;
 }
